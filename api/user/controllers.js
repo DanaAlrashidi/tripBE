@@ -31,6 +31,7 @@ const register = async (req, res, next) => {
 };
 
 const login = async (req, res, next) => {
+  console.log("first");
   try {
     // const user = req.user;
     const token = generateToken(req.user);

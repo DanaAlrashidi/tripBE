@@ -17,6 +17,7 @@ app.use(cors());
 
 app.use(passport.initialize());
 passport.use("local", localStrategy);
+app.use("/media", express.static(path.join(__dirname, "media")));
 
 app.use(morgan("dev"));
 
